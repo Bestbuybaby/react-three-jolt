@@ -1,0 +1,365 @@
+# Instincts generated from https://github.com/Bestbuybaby/react-three-jolt
+# Generated: 2026-06-21T05:15:27.308Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: react-three-jolt-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the npm_and_yarn group across 5 directories with 18 updates
+
+---
+id: react-three-jolt-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Commit Length
+
+## Action
+
+Write moderate-length commit messages (~77 characters)
+
+## Evidence
+
+- Average commit message length: 77 chars
+- Based on 1 commits
+
+---
+id: react-three-jolt-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: react-three-jolt-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: react-three-jolt-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: react-three-jolt-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: react-three-jolt-workflow-multi-package-dependency-upgrade
+trigger: "when doing multi package dependency upgrade"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Workflow Multi Package Dependency Upgrade
+
+## Action
+
+Follow the multi-package-dependency-upgrade workflow:
+1. Identify outdated dependencies in each package.
+2. Update the version numbers in the relevant package.json files.
+3. Update the root lockfile (e.g., yarn.lock) to reflect new dependency versions.
+4. Commit all changed package.json files and the lockfile together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: apps/*/package.json, packages/*/package.json, yarn.lock
+
+---
+id: react-three-jolt-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern: namingConventions.files = camelCase
+
+---
+id: react-three-jolt-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern: namingConventions.functions = camelCase
+
+---
+id: react-three-jolt-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern: namingConventions.classes = PascalCase
+
+---
+id: react-three-jolt-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern: namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: react-three-jolt-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern: importStyle = relative
+
+---
+id: react-three-jolt-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern: exportStyle = named
+
+---
+id: react-three-jolt-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern: testLocation = separate
+
+---
+id: react-three-jolt-instinct-monorepo-test-structure
+trigger: "When writing tests for a package or app"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Monorepo Test Structure
+
+## Action
+
+Place tests within the respective package or app directory, but in a dedicated test folder
+
+## Evidence
+
+- Pattern: monorepo structure with separate test location
+
+---
+id: react-three-jolt-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Commit Format
+
+## Action
+
+Use the conventional commit format with a prefix (e.g., chore), a scope in parentheses, and a colon, followed by a concise description
+
+## Evidence
+
+- Pattern: conventional commit format
+- Example: chore(deps): bump the npm_and_yarn group across 5 directories with 18 updates
+
+---
+id: react-three-jolt-instinct-commit-prefix-chore
+trigger: "When committing dependency updates or maintenance tasks"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Commit Prefix Chore
+
+## Action
+
+Use the 'chore' prefix in the commit message
+
+## Evidence
+
+- Pattern: commit prefixes include 'chore'
+- Example: chore(deps): bump the npm_and_yarn group across 5 directories with 18 updates
+
+---
+id: react-three-jolt-instinct-workflow-multi-package-dependency-upgrade
+trigger: "When dependencies need to be updated across multiple packages in the monorepo"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: Bestbuybaby/react-three-jolt
+---
+
+# React Three Jolt Instinct Workflow Multi Package Dependency Upgrade
+
+## Action
+
+Identify outdated dependencies in each package, update relevant package.json files, update the root lockfile, and commit all changes together
+
+## Evidence
+
+- Workflow: multi-package-dependency-upgrade
+- Files involved: apps/*/package.json, packages/*/package.json, yarn.lock
+- Commit example: chore(deps): bump the npm_and_yarn group across 5 directories with 18 updates
+
